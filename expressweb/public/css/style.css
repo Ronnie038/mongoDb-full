@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-bg: #1e272e;
+	--main-color: #0097e6;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main_menu {
+	background-color: var(--main-bg);
+}
+.main_menu .main_navbar {
+	background-color: var(--main-bg);
+	color: #fff;
+	padding: 2rem 0;
+}
+
+.main_navbar li {
+	margin-right: 1rem;
+}
+.main_navbar a {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.navbar-toggler {
+	background: red;
+}
+.fa-snowflake {
+	transition: all linear;
+
+	animation: rotate 2s linear infinite;
+	color: var(--main-color);
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+footer {
+	width: 100%;
+	background-color: var(--main-bg);
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	margin-top: auto;
+}
